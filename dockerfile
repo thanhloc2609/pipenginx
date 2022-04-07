@@ -1,7 +1,7 @@
 FROM ubuntu
 RUN apt-get update -y
 RUN apt-get upgrade -y
-RUN ap-get install nginx -y
+RUN apt-get install nginx -y
 RUN mkdir config-site
 COPY default /config-site
 WORKDIR config-site
